@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        /* Box-level */
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;
+
+                    Width | style | color
+            border: 10px    solid   darkblue;
+            */
+            border: 10px solid darkblue;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+                      Top  | Right | Bottom | Left
+            padding: 10px    20px    30px    40px;
+            
+            padding: 10px; = padding: 10px 10px 10px 10px;
+            
+            padding: 10px 20px; = Top e Bottom 10px e Right e Left 20px
+            */
+            padding: 10px;
+            
+            /*
+            margin: auto; = certralizada
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+                    Top  | Right | Bottom | Left
+            margin: 10px   20px    30px     40px;
+
+            margin: 10px; = margin: 10px 10px 10px 10px;
+            */
+            margin: 10px auto 10px auto;
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: slateblue;
+
+                     Width | style | color
+            outline: 5px     dashed  slateblue;
+            */
+            outline: 5px dashed slateblue;
+        }
+
+        /* Inline-level */
+        a{
+            border: 10px solid red ;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tbm são exemplos de box-level mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tudo finciona</p>
+</body>
+</html>

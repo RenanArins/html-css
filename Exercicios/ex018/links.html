@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="../ex004/favicon.ico" type="image/x-icon">
+    <style>
+
+        /* Seletores personalizados
+            #  = id
+            .  = class
+            :  = pseudo-classe
+            :: = pseudo-elemento
+            >  = clidren
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: aqua;
+        }
+
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.univille.edu.br/" target="_blank">Presencial</a></li>
+        <li><a href="https://ava.univille.br/" target="_blank">EAD</a></li>
+        <li><a href="https://siga2.univille.br/" target="_blank">Siga</a></li>
+    </ul>
+</body>
+</html>

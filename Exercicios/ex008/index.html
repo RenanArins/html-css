@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p></p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+    </picture>
+
+
+    <h1>Reproduzir audio</h1>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/jazz.mp3" type="audio/mpeg">
+        <source src="midia/jazz.ogg" type="audio/ogg">
+        <source src="midia/jazz.wav" type="audio/wav">
+        <p>Seu navegador não aceita audio</p>
+    </audio>
+</body>
+</html>
